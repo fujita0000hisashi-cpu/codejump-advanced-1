@@ -141,3 +141,44 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ====================
+  Sidebar （骨格）
+====================== */
+.sidebar-inner {
+  display: grid;
+  gap: 32px;
+}
+
+.side-block {
+  display: grid;
+  gap: 12px;
+}
+
+.side-title {
+  margin: 0;
+  font-size: 16px;
+}
+
+.side-thumb {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: rgba(0, 0, 0, .08);
+}
+
+.side-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.side-list {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.side-item {
+  font-size: 14px;
+}
