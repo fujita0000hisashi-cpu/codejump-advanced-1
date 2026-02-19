@@ -98,3 +98,46 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ====================
+  Main / Articles （骨格）
+====================== */
+.articles {
+  display: grid;
+  gap: 24px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.article-card {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.article-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: rgba(0, 0, 0, .08);
+}
+
+.article-body {
+  display: grid;
+  gap: 8px;
+}
+
+.article-title {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .article-card {
+    grid-template-columns: 1fr;
+  }
+}
