@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/* ====================
+  0. Base Reset
+====================== */
+
+*,
+*::before,
+*::after {
+  /*仮: まずは箱を見える化(完成後に削除) */
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+  font-size: 1rem;
+}
+
+/* ====================
+  1. Container (横幅責任)
+====================== */
+
+.conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ====================
+  2. Layout (2カラム責任)
+====================== */
+.layout {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* 67% 33% */
+  gap: 40px;
+}
+
+/* ====================
+  3. Responsive
+====================== */
+
+@media screen and (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ====================
+  4. 仮の可視化（後で削除）
+====================== */
+
+.main {
+  background: rgba(0, 0, 255, .05);
+}
+
+.sidebar {
+  background: rgba(0, 0, 255, .05);
+}
