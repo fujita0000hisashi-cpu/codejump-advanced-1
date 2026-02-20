@@ -25,7 +25,7 @@ body {
   1. Container (横幅責任)
 ====================== */
 
-.conteiner {
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
