@@ -215,3 +215,41 @@ body {
   margin: 0;
   font-size: 13px;
 }
+
+/* ====================
+  Header （骨格）
+====================== */
+.header {
+  padding: 16px 0;
+  background: rgba(0, 0, 0, .03);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.header-item {
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-list {
+    flex-wrap: wrap;
+  }
+}
