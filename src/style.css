@@ -77,14 +77,8 @@ body {
 }
 
 .pickup-card {
-  margin: 0;
-}
-
-.pickup-link {
   display: grid;
   gap: 12px;
-  text-decoration: none;
-  color: inherit;
 }
 
 .pickup-thumb {
@@ -102,9 +96,32 @@ body {
   line-height: 1.4;
 }
 
-/* hover */
-.pickup-link:hover .pickup-title {
-  text-decoration: underline;
+/* READ MORE */
+.pickup-more {
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  width: fit-content;
+  justify-self: center;
+}
+
+/*河川部を疑似要素で作る*/
+.pickup-more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+/* hover で左->右に消える */
+.pickup-more:hover::after {
+  transform:translateY(6);
+  opacity: 0;
 }
 
 /* Responsive */
