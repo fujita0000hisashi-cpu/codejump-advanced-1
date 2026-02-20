@@ -182,3 +182,36 @@ body {
 .side-item {
   font-size: 14px;
 }
+
+/* ====================
+  Footer （骨格）
+====================== */
+.footer {
+  margin-top: 80px;
+  padding: 40px 0;
+  background: rgba(0, 0, 0, .05);
+}
+
+.footer-inner {
+  display: grid;
+  gap: 24;
+  text-align: center;
+}
+
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  grid-area: 24px;
+}
+
+.footer-item {
+  font-size: 14px;
+}
+
+.footer-copy {
+  margin: 0;
+  font-size: 13px;
+}
