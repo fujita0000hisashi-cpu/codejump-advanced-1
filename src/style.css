@@ -106,7 +106,7 @@ body {
   justify-self: center;
 }
 
-/*河川部を疑似要素で作る*/
+/*下線部を疑似要素で作る*/
 .pickup-more::after {
   content: "";
   position: absolute;
@@ -132,40 +132,112 @@ body {
 }
 
 /* ====================
-  Main / Articles （骨格）
+  Main / Articles （style）
 ====================== */
 .articles {
   display: grid;
-  gap: 24px;
+  gap: 40px;
+}
+
+.article-card {
+  display: grid;
+  gap: 12px;
 }
 
 .section-title {
   margin: 0;
   font-size: 18px;
+  line-height: 1.4;
 }
 
-.article-card {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 16px;
-  align-items: start;
+.article-thumb-link {
+  display: block;
 }
 
 .article-thumb {
   width: 100%;
   aspect-ratio: 4 / 3;
-  background: rgba(0, 0, 0, .08);
+  object-fit: cover;
+  display: block;
 }
 
 .article-body {
   display: grid;
-  gap: 8px;
+  gap: 12px;
+}
+
+.article-date {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.article-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.article-title-link:hover {
+  text-decoration: underline;
 }
 
 .article-title {
   margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.article-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.article-date,
+.article-category {
+  color: #666;
+  text-decoration: none;
+}
+
+.article-date:hover,
+.article-category {
+  color: #666;
+  text-decoration: none;
+}
+
+.article-text {
+  margin: 0;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.8;
+}
+
+/* READ MORE */
+.article-more {
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  width: fit-content;
+  justify-self: center;
+}
+
+/*下線部を疑似要素で作る*/
+.article-more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+/* hover で左->右に消える */
+.article-more:hover::after {
+  transform:translateY(6);
+  opacity: 0;
 }
 
 @media (max-width: 900px) {
