@@ -247,44 +247,117 @@ body {
 }
 
 /* ====================
-  Sidebar （骨格）
+  Sidebar （style）
 ====================== */
 .sidebar-inner {
   display: grid;
-  gap: 32px;
+  gap: 48px;
 }
 
 .side-block {
   display: grid;
-  gap: 12px;
+  gap: 16px;
 }
 
 .side-title {
   margin: 0;
   font-size: 16px;
+  font-weight: bold;
 }
 
 .side-thumb {
-  width: 100%;
+  margin: 0 auto;
+  width: 120px;
   aspect-ratio: 1 / 1;
-  background: rgba(0, 0, 0, .08);
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.side-author {
+  margin: 8px 0 0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
 }
 
 .side-text {
   margin: 0;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.8;
+  text-align: center;
 }
 
 .side-list {
   margin: 0;
-  padding-left: 18px;
+  padding-left: 0;
+  list-style: none;
   display: grid;
   gap: 8px;
 }
 
-.side-item {
+.side-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.side-link:hover {
+  opacity: .7;
+}
+
+.ranking-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 16px;
+}
+
+.ranking-item {
   font-size: 14px;
+}
+
+.ranking-link {
+  display: grid;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.ranking-link:hover {
+  opacity: .7;
+}
+
+.ranking-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.ranking-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.archive-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.archive-item {
+  border-top: 1px solid #ddd;
+}
+
+.archive-item:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.archive-item .side-link {
+  display: block;
+  padding: 10px 0;
 }
 
 /* ====================
