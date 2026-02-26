@@ -366,13 +366,21 @@ body {
 .footer {
   margin-top: 80px;
   padding: 40px 0;
-  background: rgba(0, 0, 0, .05);
+  background: #111;
+  color: #fff;
 }
 
 .footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: grid;
   gap: 24;
   text-align: center;
+}
+
+.footer-nav {
+
 }
 
 .footer-list {
@@ -384,13 +392,30 @@ body {
   grid-area: 24px;
 }
 
-.footer-item {
+.footer-link {
+  text-decoration: none;
+  color: #fff;
   font-size: 14px;
+}
+
+.footer-link:hover {
+  opacity: .7;
+}
+
+.footer-item {
+  
 }
 
 .footer-copy {
   margin: 0;
   font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .footer-list {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 /* ====================
