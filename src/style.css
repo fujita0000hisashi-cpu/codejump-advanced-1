@@ -364,8 +364,8 @@ body {
   Footer （骨格）
 ====================== */
 .footer {
-  margin-top: 80px;
-  padding: 40px 0;
+  margin-top: 64px;
+  padding: 48px 0 0 0;
   background: #111;
   color: #fff;
 }
@@ -375,27 +375,45 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   display: grid;
-  gap: 24;
-  text-align: center;
+  gap: 40;
 }
 
-.footer-nav {
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
 
+.footer-block {
+  display: grid;
+  gap: 16px;
+}
+
+.footer-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.8;
+  opacity: .8;
 }
 
 .footer-list {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  justify-content: center;
-  grid-area: 24px;
+  display: grid;
+  gap: 8px;
 }
 
 .footer-link {
   text-decoration: none;
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .footer-link:hover {
@@ -407,14 +425,16 @@ body {
 }
 
 .footer-copy {
-  margin: 0;
-  font-size: 13px;
+  margin-top: 24px;
+  font-size: 12px;
+  text-align: center;
+  opacity: .7;
 }
 
 @media (max-width: 900px) {
-  .footer-list {
-    flex-direction: column;
-    gap: 12px;
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 }
 
