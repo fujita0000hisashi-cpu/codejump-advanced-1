@@ -402,10 +402,49 @@ body {
   opacity: .8;
 }
 
-.footer-list {
+.footer-about {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.footer-link--arrow {
+  position: relative;
+  padding-left: 16px;
+}
+
+.footer-link--arrow::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  font-size: 10px;
+  top: 2px;
+}
+
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu-item {
+  border-top: 1px solid #ddd;
+}
+
+.footer-menu-item:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.footer-menu-item .footer-link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+}
+
+.footer-list {
   display: grid;
   gap: 8px;
 }
