@@ -1,20 +1,24 @@
 export function Header() {
   return(
     <header className="header">
-      <div className="container">
+      
         <div className="header-inner">
-          <h1 className="header-log">LOGO</h1>
-          <nav className="header-nav">
-            <ul className="header-list">
-              <li className="header-item">NEW</li>
-              <li className="header-item">COLUMN</li>
-              <li className="header-item">SERIES</li>
-              <li className="header-item">Q&amp;A</li>
-              <li className="header-item">CONTACT</li>
+          <h1 className="header-logo">
+            <a className="header-logo-link" href="#">
+              <img className="header-logo-img" src="/img/logo.svg" alt="Logo" />
+            </a>
+          </h1>
+          <nav className="header-nav" aria-label="Header navigation">
+            <ul className="header-nav-list">
+              <li className="header-nav-item"><a className="header-nav-link">NEW</a></li>
+              <li className="header-nav-item"><a className="header-nav-link">COLUMN</a></li>
+              <li className="header-nav-item"><a className="header-nav-link">SERIES</a></li>
+              <li className="header-nav-item"><a className="header-nav-link">Q&amp;A</a></li>
+              <li className="header-nav-item"><a className="header-nav-link">CONTACT</a></li>
             </ul>
           </nav>
         </div>
-      </div>
+
     </header>
   );
 }
